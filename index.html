@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubMed Paper Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>PubMed Paper Downloader</h1>
+    <form method="post">
+        <label for="keywords">Keywords:</label>
+        <input type="text" id="keywords" name="keywords" required>
+        
+        <label for="num_papers">Number of Papers:</label>
+        <input type="number" id="num_papers" name="num_papers" required>
+        
+        <button type="submit">Search</button>
+    </form>
+
+    {% if csv_data %}
+        <div class="download-container">
+            <a href="{{ url_for('download', csv_data=csv_data|urlencode) }}" class="download-link">Download</a>
+        </div>
+    {% endif %}
+    <br>
+    <br>
+    <br>
+    <center> <p>&#169; Dr.Klinisch,All Rights Reserved.2024</p> </center>
+</body>
+</html>
