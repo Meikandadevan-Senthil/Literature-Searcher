@@ -69,6 +69,3 @@ pip install Flask pandas requests
 ## Contact
 
 For any questions or issues, please contact meikandadevan.senthil@gmail.com
-```
-
-Feel free to customize the `README.md` content according to your needs or project specifics!
