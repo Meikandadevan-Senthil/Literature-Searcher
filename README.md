@@ -27,8 +27,8 @@ pip install Flask pandas requests
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Meikandadevan-Senthil/Literature-Searcher
+   cd Literature-Searcher
    ```
 
 2. **Run the Flask Application**
